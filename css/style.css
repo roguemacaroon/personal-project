@@ -1,3 +1,47 @@
+/* 
+===================================
+Resets (box-sizing, normalize, etc.) 
+===================================
+*/
+
 html {
-  background-color: rgb(31, 5, 5);
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* 
+===================================
+Variables (colors, text, spacing, etc.)
+===================================
+*/
+:root {
+  /* colors */
+  --neutral-black: #0a0a0a;
+  --neutral-dark-gray: #484848;
+  --neutral-off-white: #c7c7c7;
+  --neutral-white: #ffffff;
+  --primary-yellow: #d3e97a;
+  --background-dark-gray: #1a1a1a;
+  --background-medium-gray: #222222;
+  --basic-black: #000000;
+}
+
+/* 
+===================================
+Accessibility
+=================================== 
+*/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
