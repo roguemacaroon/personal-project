@@ -29,6 +29,55 @@ Variables (colors, text, spacing, etc.)
   --background-dark-gray: #1a1a1a;
   --background-medium-gray: #222222;
   --basic-black: #000000;
+
+  /* font */
+  --main-headings: "Bebas Neue", sans-serif;
+  --paragraph: "Manrope", sans-serif;
+
+  /* font weight */
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --heavy-weight: 600;
+
+  /* Font sizes */
+  --font16: 1rem;
+  --font21: 1.313rem;
+  --font24: 1.5rem;
+  --font28: 1.75rem;
+  --font36: 2.25rem;
+  --font46: 2.875rem;
+  --font56: 3.5rem;
+
+  /* Line Height */
+  --line-height20: 1.25rem;
+  --line-height26: 1.625rem;
+  --line-height28: 1.75rem;
+  --line-height32: 2rem;
+  --line-height40: 2.5rem;
+  --line-height50: 3.125rem;
+  --line-height58: 3.625rem;
+
+  /* Spacing */
+  --spacing10: 10px;
+  --spacing20: 20px;
+  --spacing30: 30px;
+  --spacing40: 40px;
+  --spacing50: 50px;
+  --spacing60: 60px;
+  --spacing80: 80px;
+  --spacing100: 100px;
+
+  /* border-radius */
+  --border-radius10: 10px;
+
+  /* Wrappers */
+  --wrapper-width-max: 1328px;
+  --desktop-wrapper-width: 90%;
+  --mobile-wrapper-width: 95%;
+}
+
+.hidden {
+  display: none;
 }
 
 /* 
@@ -44,4 +93,26 @@ Accessibility
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* 
+===================================
+main styles
+=================================== 
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--neutral-black);
+  font-family: var(--paragraph);
+  color: var(--neutral-off-white);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
 }
