@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/normalize.css" />
@@ -19,7 +19,7 @@
 Header
 ==================  -->
     <!-- start of the header section -->
-    <header>
+    <header class="hidden">
       <h1>Trisha Augustine</h1>
       <!-- the nav section -->
       <nav></nav>
@@ -30,12 +30,12 @@ Header
 Hero
 ==================  -->
     <!-- this is the start of the section -->
-    <section class="hero">
+    <section class="hero wrapper">
       <!-- this div contains the introduction header and paragraph -->
       <div class="introduction">
-        <h1>Hi, I am Trisha Augustine</h1>
+        <p class="mobile-heading-one">Hi, I am Trisha Augustine</p>
         <p>
-          A Junior Developer that has so far focused on front end with
+          A junior developer that has so far focused on front end with
           aspirations of fullstack, from Elsipogtog New Brunswick.
         </p>
       </div>
@@ -53,87 +53,109 @@ Hero
           alt="a woman smiling"
         />
       </div>
-      <!-- giving a physical division to the end of the section -->
-      <hr />
     </section>
-
+    <!-- giving a physical division to the end of the section -->
+    <hr />
     <!-- ==================
 featured projects
 ==================  -->
     <!-- this is the start of the section -->
-    <section class="featured-projects">
+    <section class="featured-projects wrapper">
       <div class="projects-overview">
-        <h2>Featured Projects</h2>
+        <h2 class="mobile-heading-two">Featured Projects</h2>
         <p>
           Here are some projects that showcase my skills and abilities as a
           junior developer
         </p>
       </div>
-      <!-- class of card to keep all cards uniform -->
-      <div class="card">
-        <!-- image placeholder for website -->
-        <img
-          src="/assets/images/website-placeholder-image.jpg"
-          alt="website demo"
-        />
+      <!-- containing the entire project section -->
+      <div class="project">
+        <!-- class of card to keep all cards uniform -->
+        <div class="card">
+          <!-- image placeholder for website -->
+          <img
+            src="/assets/images/website-placeholder-image.jpg"
+            alt="website demo"
+          />
+        </div>
+        <!-- what project was -->
+        <p class="project-title">
+          "If These Lands Could Talk" Website redesign
+        </p>
+        <!-- about the project -->
+        <p>
+          Collaborated with other junior developers under the guidance of our
+          mentors to complete a redesign of a website for If These Lands Could
+          Talk, a non-profit organization. My team tasks involved global
+          variables and the home page design. Using GitHub and git terminal were
+          the foundations of having a harmonious workflow with each other, while
+          responsive design and accessibility were the overall prioritized
+          goals.
+        </p>
+        <!-- project information and links -->
+        <p>Project Info</p>
+        <hr />
+        <div class="project-details">
+          <p>Year</p>
+          <p>2024</p>
+        </div>
+        <hr />
+        <div class="project-details">
+          <p>Role</p>
+          <p>Front-end Developer</p>
+        </div>
+        <hr />
+        <div class="link-container">
+          <a href="https://iftheselandscouldtalk.org/"
+            >VIEW LIVE <img src="/assets/icons/arrow.svg" alt="arrow"
+          /></a>
+          <a
+            href="https://github.com/indigenousfriends/itlct-website-redesign.git"
+            >SEE ON GITHUB
+            <img src="/assets/icons/bxl-github.svg.svg" alt="GitHub logo"
+          /></a>
+        </div>
       </div>
-      <!-- what project was -->
-      <p class="project-title">
-        Website redesign for If These Lands Could Talk, a non-profit
-        organization
-      </p>
-      <!-- about the project -->
-      <p>
-        Collaborated with other junior developers under the guidance of our
-        mentors to complete a redesign of a website for If These Lands Could
-        Talk. My team tasks involved global variables and the home page design.
-        Using GitHub and git terminal were the foundations of having a
-        harmonious workflow with each other, while responsive design and
-        accessibility were the overall prioritized goals.
-      </p>
-      <p>Project Info</p>
-      <hr />
-      <span>Year 2024</span>
-      <hr />
-      <span>Role Front-end Developer</span>
-      <hr />
-      <a href="https://iftheselandscouldtalk.org/"
-        >VIEW LIVE <img src="/assets/icons/arrow.svg" alt="arrow"
-      /></a>
-      <a href="https://github.com/indigenousfriends/itlct-website-redesign.git"
-        >SEE ON GITHUB
-        <img src="/assets/icons/bxl-github.svg.svg" alt="GitHub logo"
-      /></a>
-
-      <div class="card">
-        <img
-          src="/assets/images/website-placeholder-image-2.jpg"
-          alt="website demo"
-        />
+      <!-- project section -->
+      <div class="project">
+        <div class="card">
+          <img
+            src="/assets/images/website-placeholder-image-2.jpg"
+            alt="website demo"
+          />
+        </div>
+        <p class="project-title">
+          "If These Lands Could Talk" One-page website
+        </p>
+        <p>
+          Collaborated with other junior developers under the guidance of our
+          mentors to complete a one-page website for If These Lands Could Talk,
+          a non-profit organization. My team tasks involved the "Contact Us"
+          section, and writing the "Read Me". Responsive design and
+          accessibility were the overall prioritized goals.
+        </p>
+        <p>Project Info</p>
+        <hr />
+        <div class="project-details">
+          <p>Year</p>
+          <p>2023</p>
+        </div>
+        <hr />
+        <div class="project-details">
+          <p>Role</p>
+          <p>Front-end Developer</p>
+        </div>
+        <hr />
+        <div class="link-container">
+          <a href="https://github.com/indigenousfriends/itlct-website.git"
+            >SEE ON GITHUB
+            <img src="/assets/icons/bxl-github.svg.svg" alt="GitHub logo"
+          /></a>
+        </div>
       </div>
-      <p class="project-title">
-        One page website for If These Lands Could Talk, a non-profit
-        organization
-      </p>
-      <p>
-        Collaborated with other junior developers under the guidance of our
-        mentors to complete a one page website for If These Lands Could Talk. My
-        team tasks involved the Contact Us section, and writing the read me.
-        Responsive design and accessibility were the overall prioritized goals.
-      </p>
-      <p>Project Info</p>
-      <hr />
-      <span>Year 2023</span>
-      <hr />
-      <span>Role Front-end Developer</span>
-      <hr />
-      <a href="https://github.com/indigenousfriends/itlct-website.git"
-        >SEE ON GITHUB
-        <img src="/assets/icons/bxl-github.svg.svg" alt="GitHub logo"
-      /></a>
     </section>
-    <section class="about-me">
-      <h2 class="hidden">About Me</h2>
+    <section class="about-me wrapper">
+      <h2 class="mobile-heading-two">About Me</h2>
       <p class="title hidden">
         Experience in front-end development with a dynamic professional
         background.
@@ -151,14 +173,14 @@ featured projects
       </p>
 
       <!-- I want this to eventually be a modal, not a button -->
-      <button>Learn More</button>
+      <a href="#">Learn More</a>
       <img
         src="/assets/images/placeholder-profile-mobile.jpg"
         alt="a woman smiling"
       />
     </section>
     <section class="lets-connect">
-      <h2>Get in Touch</h2>
+      <h2 class="mobile-heading-two">Get in Touch</h2>
       <p>Send me a message at placeholder@email.com</p>
       <p>Here is my <a href="#">resume</a> for more information.</p>
       <img src="/assets/icons/bxl-linkedin.svg.svg" alt="linkedin logo" />

@@ -1,3 +1,98 @@
-.hero-image img {
-  border-radius: var(--border-radius10);
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
 }
+
+/* 
+===================================
+Hero Section
+===================================
+*/
+section.hero {
+  margin: 0 auto;
+}
+
+.hero-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-button-container img {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-btn {
+  border-radius: 20px;
+  height: 40px;
+  padding: 0px 10px 0px 10px;
+  background-color: var(--primary-yellow);
+  color: var(--neutral-black);
+  font-family: var(--paragraph);
+  font-weight: var(--extra-heavy-weight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  border-radius: 40px;
+  padding-top: 20px;
+}
+
+/* 
+===================================
+Featured Project Section
+===================================
+*/
+section.featured-projects {
+  margin: 0 auto;
+}
+
+.project {
+  padding-top: 30px;
+}
+
+.card {
+  background-color: var(--background-medium-gray);
+}
+
+.card img {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.link-container a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 
+===================================
+About Me Section
+===================================
+*/
+
+/* 
+===================================
+Let's Connect Section
+===================================
+*/
