@@ -108,11 +108,6 @@ Media Queries
 
 /* desktop */
 @media screen and (min-width: 1025px) {
-  .wrapper {
-    width: 90%;
-    max-width: 1130px;
-  }
-
   /*
 ===================================
 Hero Section

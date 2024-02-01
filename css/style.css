@@ -154,3 +154,27 @@ img {
   font-weight: var(--medium-weight);
   line-height: var(--line-height32);
 }
+
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    width: 90%;
+    max-width: 1130px;
+  }
+  .heading-one {
+    font-family: var(--main-headings);
+    color: var(--neutral-white);
+    font-size: var(--font57);
+    font-weight: var(--regular-weight);
+    line-height: var(--line-height58);
+    text-wrap: balance;
+    margin-bottom: 0;
+  }
+
+  .heading-two {
+    font-family: var(--main-headings);
+    color: var(--neutral-white);
+    font-size: var(--font43);
+    font-weight: var(--regular-weight);
+    margin-bottom: 0;
+  }
+}
