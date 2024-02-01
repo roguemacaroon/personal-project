@@ -81,6 +81,10 @@ Variables (colors, text, spacing, etc.)
   display: none;
 }
 
+a {
+  color: var(--primary-yellow);
+}
+
 /* 
 ===================================
 Accessibility
