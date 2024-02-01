@@ -94,6 +94,26 @@ section.about-me img {
   margin-top: 20px;
   max-width: 500px;
 }
+
+/* 
+===================================
+Skills Section
+===================================
+*/
+
+.skills-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-icons img {
+  height: 50px;
+  width: 50px;
+}
+
 /* 
 ===================================
 Let's Connect Section
@@ -183,6 +203,20 @@ About Me Section
     max-width: 40%;
   }
 
+  /* skills section */
+  .skills {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .skills-heading {
+    width: 50%;
+  }
+
+  .skills-icons {
+    max-width: 40%;
+  }
   /* connect section */
   .lets-connect-container {
     display: flex;
