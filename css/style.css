@@ -116,6 +116,12 @@ body {
   color: var(--neutral-off-white);
 }
 
+/* wrapper */
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 /* Images */
 img {
   max-width: 100%;

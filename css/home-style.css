@@ -1,21 +1,16 @@
-.wrapper {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 /* 
 ===================================
 Hero Section
 ===================================
 */
-section.hero {
-  margin: 0 auto;
-}
+
+/* targeting the buttons */
 
 .button-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -37,9 +32,10 @@ section.hero {
   align-items: center;
 }
 
+/* adding a rounded radius to the hero image */
 .hero-image img {
-  border-radius: 40px;
-  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 /* 
@@ -47,31 +43,32 @@ section.hero {
 Featured Project Section
 ===================================
 */
-section.featured-projects {
-  margin: 0 auto;
-}
 
+/* adding padding to the top of the project card */
 .project {
   padding-top: 30px;
 }
 
+/* the card that holds the project */
 .card {
   background-color: var(--background-medium-gray);
 }
 
+/* targeting the image in the card */
 .card img {
   width: 75%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-
+/* the details under the project card */
 .project-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/* the links under the project card */
 .link-container {
   display: flex;
   flex-direction: row;
@@ -90,9 +87,120 @@ section.featured-projects {
 About Me Section
 ===================================
 */
-
+section.about-me img {
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 20px;
+  max-width: 500px;
+}
 /* 
 ===================================
 Let's Connect Section
 ===================================
 */
+
+/*
+===================================
+Media Queries
+===================================
+*/
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    width: 90%;
+    max-width: 1130px;
+  }
+
+  /*
+===================================
+Hero Section
+===================================
+*/
+  /* the entire section */
+  .hero {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  /* the write up (no image) */
+  .hero-column {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* moving the buttons over to the left */
+  .hero .button-container {
+    justify-content: left;
+  }
+
+  /*
+===================================
+Project Section
+===================================
+*/
+  /* the entire section */
+  .project {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  /* the card on the dark gray background */
+  .card {
+    max-width: 50%;
+  }
+  /* the image on the card */
+  .card img {
+    margin-top: 50px;
+  }
+  /* the information write up */
+  .project-information {
+    max-width: 40%;
+  }
+
+  /*
+===================================
+About Me Section
+===================================
+*/
+  /* making the title visible */
+  .about-me .hidden {
+    display: flex;
+  }
+  /* hiding the picture */
+  .about-me img {
+    display: none;
+  }
+  /* the entire section */
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  /* just the heading */
+  .about-me-heading {
+    width: 50%;
+  }
+
+  /* giving width to the about me information */
+  .bio-brief {
+    max-width: 40%;
+  }
+
+  /* connect section */
+  .lets-connect-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  /* giving width to the header */
+  .connect-heading {
+    width: 50%;
+  }
+  /* giving width to the info in the section */
+  .connect-info {
+    max-width: 40%;
+  }
+}
