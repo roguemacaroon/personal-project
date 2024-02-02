@@ -19,11 +19,21 @@
 Header
 ==================  -->
     <!-- start of the header section -->
-    <header class="hidden">
-      <h1>Trisha Augustine</h1>
-      <!-- the nav section -->
-      <nav></nav>
-      <!-- end of the header section -->
+    <header class="wrapper" id="top">
+      <nav class="nav">
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav-link hide">
+          <a href="#projects">Featured Projects</a>
+          <a href="#about">About Me</a>
+          <a href="#skills-stack">Skills</a>
+          <a href="#connect">Contact & Resume</a>
+        </div>
+      </nav>
     </header>
 
     <!-- ==================
@@ -73,7 +83,7 @@ Hero
 featured projects
 ==================  -->
     <!-- this is the start of the section -->
-    <section class="featured-projects wrapper">
+    <section id="projects" class="featured-projects wrapper">
       <div class="projects-overview">
         <h2 class="heading-two">Featured Projects</h2>
         <p>
@@ -200,7 +210,7 @@ featured projects
     </div>
     </section>
     <hr />
-    <section class="about-me wrapper">
+    <section id="about" class="about-me wrapper">
       <div class="about-me-heading">
         <h2 class="heading-two">About Me</h2>
       </div>
@@ -229,7 +239,7 @@ featured projects
       </div>
     </section>
     <hr />
-    <section class="skills wrapper">
+    <section id="skills-stack" class="skills wrapper">
       <!-- first stack - tech -->
       <h2 class="heading-two">Tech Skills</h2>
 
@@ -352,7 +362,7 @@ featured projects
       </div>
     </section>
     <hr />
-    <section class="lets-connect wrapper">
+    <section id="connect" class="lets-connect wrapper">
       <div class="lets-connect-container">
         <div class="connect-heading">
           <h2 class="heading-two">Get in Touch</h2>
@@ -379,6 +389,8 @@ featured projects
     <hr />
     <footer class="wrapper">
       <p>&copy 2024 Trisha Augustine</p>
+      <a href="#top">Back to top</a>
     </footer>
+    <script src="/javascript/header-script.js"></script>
   </body>
 </html>
