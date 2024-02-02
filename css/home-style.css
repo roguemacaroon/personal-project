@@ -101,17 +101,46 @@ Skills Section
 ===================================
 */
 
-.skills-icons {
+/* targeting the list style type */
+ul {
+  list-style-type: none;
+}
+
+/* actual ul */
+.skills-list {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  padding: 0;
+}
+
+/* each individual li */
+.skill-container {
+  width: 25%;
+  min-width: 100px;
+  height: 200px;
+  position: relative;
+}
+
+/* div holding icon and name of icon */
+.skill-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: 0 auto;
+  width: 70px;
+  height: fit-content;
+  z-index: 10;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-}
-
-.skills-icons img {
-  height: 50px;
-  width: 50px;
 }
 
 /* 
@@ -204,19 +233,38 @@ About Me Section
   }
 
   /* skills section */
-  .skills {
+
+  .tech-stack {
+    margin-bottom: 50px;
+  }
+
+  .design-stack {
+    margin-bottom: 50px;
+  }
+
+  .skill-container {
+    width: 25%;
+    min-width: 200px;
+    height: 250px;
+    position: relative;
+  }
+
+  .skill-icon {
+    width: 100px;
+  }
+
+  /* 
+  
+
+
+
+  .skills-list {
+    max-width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    flex-wrap: wrap;
   }
-
-  .skills-heading {
-    width: 50%;
-  }
-
-  .skills-icons {
-    max-width: 40%;
-  }
+ */
   /* connect section */
   .lets-connect-container {
     display: flex;
