@@ -4,11 +4,11 @@ function handleModal(openBtnId, closeBtnId, modalId) {
     const closeBtn = document.getElementById(closeBtnId);
 
     const openModal = function () {
-        modalElement.classList.remove("hidden");
+        modalElement.classList.remove("modal-hidden");
     };
 
     const closeModal = function () {
-        modalElement.classList.add("hidden");
+        modalElement.classList.add("modal-hidden");
     };
 
     openBtn.addEventListener("click", openModal);
@@ -21,7 +21,7 @@ function handleModal(openBtnId, closeBtnId, modalId) {
     });
 
     document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && !modalElement.classList.contains("hidden")) {
+        if (e.key === "Escape" && !modalElement.classList.contains("modal-hidden")) {
             closeModal();
         }
     });

@@ -98,13 +98,49 @@ section.about-me img {
   border-radius: 20px;
   margin-top: 20px;
   max-width: 500px;
+  border: solid red 2px;
 }
 
+/* modal style */
+.modal-box {
+  transform: translate(-30px, -587px);
+  width: 388px;
+  height: 938px;
+  background-color: var(--neutral-black);
+  color: var(--neutral-off-white);
+  padding: 20px;
+  border: 1px solid rgb(192, 121, 121);
+  position: absolute;
+  /* overflow-y: initial; */
+}
+
+.modal-content {
+  height: 80vh;
+  overflow-y: auto;
+}
+button.close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+.modal-hidden {
+  display: none;
+}
+
+.bio-brief {
+  margin: 0;
+  border: solid yellow 2px;
+}
 /* 
 ===================================
 Skills Section
 ===================================
 */
+
 .skills {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -236,6 +272,7 @@ About Me Section
   .about-me img {
     display: none;
   }
+
   /* the entire section */
   .about-me {
     display: flex;
@@ -251,6 +288,29 @@ About Me Section
   /* giving width to the about me information */
   .bio-brief {
     max-width: 50%;
+  }
+  /* modal style */
+  .modal-box {
+    transform: translate(-50%, -50%);
+    width: 770px;
+    height: 670px;
+    background-color: var(--neutral-black);
+    color: var(--neutral-off-white);
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px #888888;
+  }
+  button.close {
+    width: 30px;
+    font-size: 20px;
+    color: #c0c5cb;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .modal-hidden {
+    display: none;
   }
 
   /*
