@@ -5,6 +5,7 @@ Hero Section
 */
 .hero-column {
   max-width: 700px;
+  margin: 0 auto;
 }
 
 /* targeting the buttons */
@@ -179,6 +180,7 @@ Hero Section
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-bottom: 30px;
   }
   /* the write up (no image) */
   .hero-column {
@@ -203,7 +205,8 @@ Project Section
   .project {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 60px;
+    margin-bottom: 30px;
   }
   /* the card on the dark gray background */
   .card {
@@ -213,6 +216,7 @@ Project Section
   .card img {
     margin-top: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
   }
   /* the information write up */
   .project-information {
@@ -237,6 +241,7 @@ About Me Section
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-bottom: 30px;
   }
   /* just the heading */
   .about-me-heading {
@@ -290,6 +295,7 @@ Let's Connect Section
   }
   /* giving width to the info in the section */
   .connect-info {
-    max-width: 40%;
+    max-width: 50%;
+    margin-top: 30px;
   }
 }
