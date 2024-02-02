@@ -32,20 +32,20 @@ header a {
   background-color: var(--primary-yellow);
 }
 
-.nav__link {
+.nav-link {
   position: absolute;
   width: 45%;
   top: 5rem;
   background-color: var(--background-medium-gray);
 }
 
-.nav__link a {
+.nav-link a {
   display: block;
   text-align: right;
   padding: 25px 25px;
 }
 
-.nav__link a:hover {
+.nav-link a:hover {
   background-color: var(--neutral-off-white);
   color: var(--neutral-black);
 }
@@ -241,7 +241,7 @@ Media Queries
 
 /* desktop */
 @media screen and (min-width: 1025px) {
-  .nav__link {
+  .nav-link {
     display: block;
     position: static;
     width: auto;
@@ -249,7 +249,7 @@ Media Queries
     background: none;
   }
 
-  .nav__link a {
+  .nav-link a {
     display: inline-block;
     padding: 15px 20px;
   }
