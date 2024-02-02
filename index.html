@@ -83,13 +83,19 @@ featured projects
       </div>
       <!-- containing the entire project section -->
       <div class="project">
-        <!-- class of card to keep all cards uniform -->
         <div class="card">
-          <!-- image placeholder for website -->
-          <img
-            src="assets/images/website-placeholder-image.jpg"
-            alt="website demo"
-          />
+          <!-- class of card to keep all cards uniform -->
+          <picture class="card">
+            <!-- image placeholder for website -->
+            <source
+              media="(min-width:1025px)"
+              srcset="/assets/images/desktop/redesign-desktop-preview.jpg"
+            />
+            <img
+              src="assets/images/website-placeholder-image.jpg"
+              alt="website demo"
+            />
+          </picture>
         </div>
         <div class="project-information">
           <div>
@@ -138,14 +144,20 @@ featured projects
 
       <!-- containing the entire project section -->
       <div class="project">
+      <div class="card">
         <!-- class of card to keep all cards uniform -->
-        <div class="card">
+        <picture class="card">
           <!-- image placeholder for website -->
+          <source
+            media="(min-width:1025px)"
+            srcset="/assets/images/desktop/onepage-desktop-preview.jpg"
+          />
           <img
-            src="/assets/images/website-placeholder-image-2.jpg"
+            src="assets/images/website-placeholder-image-2.jpg"
             alt="website demo"
           />
-        </div>
+        </picture>
+      </div>
         <div class="project-information">
           <div>
             <!-- what project was -->
@@ -185,6 +197,7 @@ featured projects
           </div>
         </div>
       </div>
+    </div>
     </section>
     <hr />
     <section class="about-me wrapper">
@@ -219,7 +232,7 @@ featured projects
     <hr />
     <section class="skills wrapper">
       <!-- first stack - tech -->
-      <h2 class="heading-two">Tech Stack</h2>
+      <h2 class="heading-two">Tech Skills</h2>
 
       <div class="tech-stack">
         <ul class="skills-list">
@@ -293,7 +306,7 @@ featured projects
         </ul>
       </div>
       <!-- second stack - design -->
-      <h2 class="heading-two">Design Stack</h2>
+      <h2 class="heading-two">Design Skills</h2>
       <div class="design-stack">
         <ul class="skills-list">
           <!-- clip studio paint -->
@@ -316,6 +329,16 @@ featured projects
               <p class="skill-name">Figma</p>
             </div>
           </li>
+          <!-- toonboom -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/Harmony.png"
+                alt="toonboom harmony logo"
+              />
+              <p class="skill-name">Toon Boom</p>
+            </div>
+          </li>          
           <!-- illustrator -->
           <li class="skill-container">
             <div class="skill-icon">
@@ -337,7 +360,7 @@ featured projects
         </div>
         <div class="connect-info">
           <p>Send me a message at placeholder@email.com</p>
-          <p>Here is my <a href="#">resume</a> for more information.</p>
+          <p>Here is a PDF of my <a href="/pdf/resume-website-version.pdf" target="_blank">resume</a> for more information.</p>
         </div>
       </div>
       <div class="button-container">

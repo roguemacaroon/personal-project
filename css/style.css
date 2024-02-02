@@ -150,6 +150,7 @@ img {
   color: var(--neutral-white);
   font-size: var(--font43);
   font-weight: var(--regular-weight);
+  line-height: var(--line-height50);
   margin-bottom: 0;
 }
 

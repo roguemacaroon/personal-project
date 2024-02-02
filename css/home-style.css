@@ -3,6 +3,9 @@
 Hero Section
 ===================================
 */
+.hero-column {
+  max-width: 700px;
+}
 
 /* targeting the buttons */
 
@@ -14,7 +17,7 @@ Hero Section
   gap: 16px;
 }
 
-.hero-button-container img {
+.button-container img {
   width: 32px;
   height: 32px;
 }
@@ -34,6 +37,7 @@ Hero Section
 
 /* adding a rounded radius to the hero image */
 .hero-image img {
+  margin: 0 auto;
   margin-top: 20px;
   border-radius: 20px;
 }
@@ -100,6 +104,14 @@ section.about-me img {
 Skills Section
 ===================================
 */
+.skills {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.design-stack p {
+  text-align: center;
+}
 
 /* targeting the list style type */
 ul {
@@ -178,7 +190,10 @@ Hero Section
   .hero .button-container {
     justify-content: left;
   }
-
+  .button-container img {
+    width: 70px;
+    height: 60px;
+  }
   /*
 ===================================
 Project Section
@@ -196,11 +211,12 @@ Project Section
   }
   /* the image on the card */
   .card img {
-    margin-top: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
   }
   /* the information write up */
   .project-information {
-    max-width: 40%;
+    max-width: 50%;
   }
 
   /*
@@ -229,10 +245,14 @@ About Me Section
 
   /* giving width to the about me information */
   .bio-brief {
-    max-width: 40%;
+    max-width: 50%;
   }
 
-  /* skills section */
+  /*
+===================================
+Skills Section
+===================================
+*/
 
   .tech-stack {
     margin-bottom: 50px;
@@ -250,21 +270,13 @@ About Me Section
   }
 
   .skill-icon {
-    width: 100px;
+    width: 120px;
   }
-
-  /* 
-  
-
-
-
-  .skills-list {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
- */
+  /*
+===================================
+Let's Connect Section
+===================================
+*/
   /* connect section */
   .lets-connect-container {
     display: flex;
@@ -272,7 +284,7 @@ About Me Section
     gap: 40px;
     margin-bottom: 40px;
   }
-  /* giving width to the header */
+  /* width to the header */
   .connect-heading {
     width: 50%;
   }
