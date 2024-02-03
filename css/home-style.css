@@ -3,6 +3,8 @@
 Header Section
 ===================================
 */
+
+/* targeting the links in the header */
 header a {
   text-decoration: none;
   font-family: var(--paragraph);
@@ -12,6 +14,7 @@ header a {
   text-transform: uppercase;
 }
 
+/* targeting the nav bar itself */
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -19,11 +22,13 @@ header a {
   padding-top: 20px;
 }
 
+/* targeting the hamburger menu */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
 }
 
+/* editing the lines that make up the hamburger menu */
 .hamburger .line {
   display: block;
   width: 40px;
@@ -32,24 +37,25 @@ header a {
   background-color: var(--primary-yellow);
 }
 
+/* the div that holds the links/buttons in the nav menu */
 .nav-link {
   position: absolute;
   width: 45%;
   top: 5rem;
   background-color: var(--background-medium-gray);
 }
-
+/* adjusting the links position */
 .nav-link a {
   display: block;
   text-align: right;
   padding: 25px 25px;
 }
-
+/* hover adjustments  */
 .nav-link a:hover {
   background-color: var(--neutral-off-white);
   color: var(--neutral-black);
 }
-
+/* hide so you have to click to open */
 .hide {
   display: none;
 }
@@ -98,6 +104,7 @@ Hero Section
   border-radius: 20px;
 }
 
+/* removing the margin from the top of the H1 */
 .hero .heading-one {
   margin-top: 0;
 }

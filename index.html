@@ -70,12 +70,18 @@ Hero
         </div>
       </div>
       <!-- this div is the hero image -->
-      <div class="hero-image">
+
+      <picture class="hero-image">
+
+        <source
+          media="(min-width:1025px)"
+          srcset="/assets/images/placeholder-profile-mobile.jpg"
+        />
         <img
-          src="/assets/images/placeholder-profile-mobile.jpg"
+          src="/assets/images/placeholder-profile-mobile-compressed.jpg"
           alt="a woman smiling"
         />
-      </div>
+      </picture>
     </section>
     <!-- giving a physical division to the end of the section -->
     <hr />
@@ -99,7 +105,7 @@ featured projects
             <!-- image placeholder for website -->
             <source
               media="(min-width:1025px)"
-              srcset="/assets/images/desktop/redesign-desktop-preview.jpg"
+              srcset="/assets/images/desktop/redesign-desktop-preview-compressed.jpg"
             />
             <img
               src="assets/images/website-placeholder-image.jpg"
@@ -160,7 +166,7 @@ featured projects
           <!-- image placeholder for website -->
           <source
             media="(min-width:1025px)"
-            srcset="/assets/images/desktop/onepage-desktop-preview.jpg"
+            srcset="/assets/images/desktop/onepage-desktop-preview-compressed.jpg"
           />
           <img
             src="assets/images/website-placeholder-image-2.jpg"
