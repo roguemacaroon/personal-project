@@ -1,5 +1,60 @@
 /* 
 ===================================
+Header Section
+===================================
+*/
+header a {
+  text-decoration: none;
+  font-family: var(--paragraph);
+  color: var(--primary-yellow);
+  font-weight: var(--heavy-weight);
+  font-size: var(--font21);
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: var(--primary-yellow);
+}
+
+.nav-link {
+  position: absolute;
+  width: 45%;
+  top: 5rem;
+  background-color: var(--background-medium-gray);
+}
+
+.nav-link a {
+  display: block;
+  text-align: right;
+  padding: 25px 25px;
+}
+
+.nav-link a:hover {
+  background-color: var(--neutral-off-white);
+  color: var(--neutral-black);
+}
+
+.hide {
+  display: none;
+}
+/* 
+===================================
 Hero Section
 ===================================
 */
@@ -43,6 +98,9 @@ Hero Section
   border-radius: 20px;
 }
 
+.hero .heading-one {
+  margin-top: 0;
+}
 /* 
 ===================================
 Featured Project Section
@@ -164,12 +222,42 @@ Let's Connect Section
 
 /*
 ===================================
+Footer Section
+===================================
+*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*
+===================================
 Media Queries
 ===================================
 */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 /* desktop */
 @media screen and (min-width: 1025px) {
+  .nav-link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav-link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   /*
 ===================================
 Hero Section
@@ -195,6 +283,9 @@ Hero Section
   .button-container img {
     width: 70px;
     height: 60px;
+  }
+  .hero .heading-one {
+    margin-top: 20px;
   }
   /*
 ===================================
