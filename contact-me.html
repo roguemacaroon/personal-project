@@ -37,10 +37,14 @@ Header
         </div>
       </nav>
     </header>
-    <div class="wrapper contact-me">
+    <!-- ==================
+Contact form
+==================  -->
+    <section class="wrapper contact-me">
       <h1 class="heading-one">Contact Form</h1>
-
+      <!-- start of form -->
       <form aria-label="Contact Form">
+        <!-- full name -->
         <input
           type="text"
           name="Name"
@@ -48,6 +52,7 @@ Header
           aria-label="Full Name"
           required
         />
+        <!-- email -->
         <input
           type="email"
           name="Email"
@@ -55,25 +60,29 @@ Header
           aria-label="Email"
           required
         />
+        <!-- drop down select -->
         <select name="Inquiry" aria-label="Select Inquiry Reason">
+          <option disabled selected>Select</option>
           <option>Question/Comment</option>
           <option>Employment Opportunity</option>
           <option>Collaboration Opportunity</option>
         </select>
+        <!-- text area -->
         <textarea
           name="Message"
           placeholder="Message"
           aria-label="Message box"
           required
         ></textarea>
+        <!-- submit button -->
         <button type="submit">Submit</button>
         <p>
           Note: to help prevent spam, you will be prompted to complete a
           reCAPTCHA upon submisson
         </p>
       </form>
-    </div>
-
+    </section>
+    <!-- header script -->
     <script src="/javascript/header-script.js"></script>
   </body>
 </html>

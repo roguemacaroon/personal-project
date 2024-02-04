@@ -1,14 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-}
-
+/* adding some space under header */
 h1 {
   margin-bottom: 2rem;
 }
 
+/* styling for the entire section */
 .contact-me {
   margin: 0 auto;
   display: flex;
@@ -16,6 +11,7 @@ h1 {
   align-items: center;
 }
 
+/* styling for form only */
 form {
   margin: 0 auto;
   display: flex;
@@ -28,6 +24,7 @@ form {
   padding: 2rem;
 }
 
+/* targeting specific areas of the form  */
 input,
 select,
 textarea {
@@ -37,9 +34,12 @@ textarea {
   width: 90%;
 }
 
+/* just the textarea */
 textarea {
   height: 6rem;
 }
+
+/* button style */
 button {
   width: 8rem;
   padding: 1.4rem;
