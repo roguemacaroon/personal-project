@@ -64,6 +64,7 @@ Variables (colors, text, spacing, etc.)
 
   /* Spacing */
   --spacing10: 10px;
+  --spacing15: 15px;
   --spacing20: 20px;
   --spacing30: 30px;
   --spacing40: 40px;
@@ -74,6 +75,7 @@ Variables (colors, text, spacing, etc.)
 
   /* border-radius */
   --border-radius10: 10px;
+  --border-radius20: 20px;
 
   /* Wrappers */
   --wrapper-width-max: 1328px;

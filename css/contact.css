@@ -1,6 +1,6 @@
 /* adding some space under header */
 h1 {
-  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 /* styling for the entire section */
@@ -16,19 +16,19 @@ form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 24rem;
-  gap: 1rem;
+  width: 95%;
+  gap: var(--spacing15);
   align-items: center;
   border: 2px solid var(--neutral-off-white);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 20px;
 }
 
 /* targeting specific areas of the form  */
 input,
 select,
 textarea {
-  padding: 1.4rem;
+  padding: var(--spacing15);
   background: var(--neutral-off-white);
   border: 1px solid black;
   width: 90%;
@@ -36,14 +36,14 @@ textarea {
 
 /* just the textarea */
 textarea {
-  height: 6rem;
+  height: var(--spacing80);
 }
 
 /* button style */
 button {
-  width: 8rem;
-  padding: 1.4rem;
-  border-radius: 20px;
+  width: 128px;
+  padding: var(--spacing20);
+  border-radius: var(--border-radius20);
   cursor: pointer;
   background: var(--primary-yellow);
   color: var(--neutral-black);
@@ -54,4 +54,14 @@ button {
 button:hover {
   background: var(--neutral-off-white);
   color: var(--neutral-black);
+}
+
+@media screen and (min-width: 800px) {
+  form {
+    width: 70%;
+  }
+  form p {
+    width: 70%;
+    margin-top: 0;
+  }
 }
