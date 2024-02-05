@@ -31,12 +31,14 @@ textarea {
   padding: var(--spacing15);
   background: var(--neutral-off-white);
   border: 1px solid black;
+  border-radius: 5px;
   width: 90%;
 }
 
 /* just the textarea */
 textarea {
   height: var(--spacing80);
+  resize: vertical;
 }
 
 /* button style */
@@ -54,14 +56,23 @@ button {
 button:hover {
   background: var(--neutral-off-white);
   color: var(--neutral-black);
+  transition: ease-in 0.3s;
 }
 
 @media screen and (min-width: 800px) {
   form {
     width: 70%;
+    margin-top: var(--spacing20);
   }
   form p {
     width: 70%;
     margin-top: 0;
+  }
+  textarea {
+    height: var(--spacing100);
+  }
+
+  .contact-me {
+    margin-top: var(--spacing80);
   }
 }
