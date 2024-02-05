@@ -90,6 +90,11 @@ Variables (colors, text, spacing, etc.)
 a {
   color: var(--primary-yellow);
 }
+a:hover {
+  background-color: #c7c7c785;
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
 
 /* 
 ===================================
@@ -173,7 +178,9 @@ img {
   p {
     font-size: var(--font21);
   }
-
+  a {
+    font-size: var(--font21);
+  }
   .heading-one {
     font-size: var(--font78);
     line-height: var(--line-height68);

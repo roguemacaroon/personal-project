@@ -54,6 +54,7 @@ header a {
 .nav-link a:hover {
   background-color: var(--neutral-off-white);
   color: var(--neutral-black);
+  transition: ease-in 0.3s;
 }
 /* hide so you have to click to open */
 .hide {
@@ -67,6 +68,7 @@ Hero Section
 .hero-column {
   max-width: 700px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 /* targeting the buttons */
@@ -122,14 +124,16 @@ Featured Project Section
 /* the card that holds the project */
 .card {
   background-color: var(--background-medium-gray);
+  padding: 5px;
 }
 
 /* targeting the image in the card */
 .card img {
-  width: 75%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  border-radius: 10px;
 }
 /* the details under the project card */
 .project-details {
@@ -312,9 +316,7 @@ Project Section
   }
   /* the image on the card */
   .card img {
-    margin-top: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
   }
   /* the information write up */
   .project-information {
@@ -395,5 +397,13 @@ Let's Connect Section
   .connect-info {
     max-width: 50%;
     margin-top: 30px;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .connect-info p {
+    position: relative;
+    left: 10px;
   }
 }
