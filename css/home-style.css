@@ -135,6 +135,11 @@ Featured Project Section
   margin: 0 auto;
   border-radius: 10px;
 }
+
+.card img:hover {
+  filter: drop-shadow(10px 10px #d3e97a);
+  transition: ease-in 0.3s;
+}
 /* the details under the project card */
 .project-details {
   display: flex;
@@ -310,6 +315,7 @@ Project Section
     gap: 60px;
     margin-bottom: 30px;
   }
+
   /* the card on the dark gray background */
   .card {
     max-width: 50%;
@@ -318,6 +324,7 @@ Project Section
   .card img {
     border-radius: 10px;
   }
+
   /* the information write up */
   .project-information {
     max-width: 50%;
