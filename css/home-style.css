@@ -172,7 +172,7 @@ section.about-me img {
   width: 70%;
   border-radius: 20px;
   margin-top: 20px;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 /* 
@@ -254,7 +254,6 @@ footer {
 Media Queries
 ===================================
 */
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 /* desktop */
 @media screen and (min-width: 1025px) {
@@ -364,7 +363,9 @@ About Me Section
   .bio-brief {
     max-width: 50%;
   }
-
+  .modal.hidden {
+    display: none;
+  }
   /*
 ===================================
 Skills Section

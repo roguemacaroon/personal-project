@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/home-style.css" />
+    <link rel="stylesheet" href="/css/modal.css">
     <title>Trisha Augustine</title>
   </head>
   <body>
@@ -251,9 +252,19 @@ about me
           While I am now building a career in tech, I started my journey over 10
           years ago in healthcare.
         </p>
+        <div class="modal-container">        
+          <button id="open-modal">Learn More</button>
 
-        <!-- Note: this link is hidden as it is still in development, it will become a modal soon! -->
-        <!-- <a href="#">Learn More</a> -->
+          <!-- modal -->
+          <div id="modal" class="modal hidden">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <button id="close-modal" class="close">&times;</button>
+              <p>Content inside the modal!</p>
+            </div>
+          </div>
+          <!-- end of modal! --></div>
+
         <img
           src="/assets/images/responsive-image.jpg"
           alt="a woman smiling"
@@ -425,5 +436,6 @@ footer
       <a href="#top">Back to top</a>
     </footer>
     <script src="/javascript/header-script.js"></script>
+    <script src="/javascript/modal.js"></script>
   </body>
 </html>

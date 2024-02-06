@@ -1,0 +1,39 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#close-modal {
+  position: relative;
+  justify-content: right;
+}
+
+.modal {
+  /* modal is fixed to the users screen */
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  /* modal is fixed ONTOP of my website content */
+  z-index: 1;
+  /* 100% width and height */
+  width: 100%;
+  height: 100%;
+  /* background is dimming the website content */
+  background-color: rgba(128, 128, 128, 0.495);
+}
+/* modal content styles */
+.modal-content {
+  background-color: red;
+  width: 50%;
+  /* positioning content to be according to user screen */
+  position: fixed;
+  /* use left and top to center */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* padding for style */
+  padding: 20px;
+  border-radius: 5px;
+}
