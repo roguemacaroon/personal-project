@@ -88,6 +88,10 @@ Variables (colors, text, spacing, etc.)
   display: none;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 a {
   color: var(--primary-yellow);
 }

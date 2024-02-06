@@ -5,35 +5,99 @@
   align-items: center;
 }
 
-#close-modal {
-  position: relative;
-  justify-content: right;
-}
-
 .modal {
   /* modal is fixed to the users screen */
   position: fixed;
   top: 0%;
   left: 0%;
   /* modal is fixed ONTOP of my website content */
-  z-index: 1;
+  z-index: 99;
   /* 100% width and height */
   width: 100%;
   height: 100%;
   /* background is dimming the website content */
   background-color: rgba(128, 128, 128, 0.495);
+  overflow-y: initial;
 }
-/* modal content styles */
-.modal-content {
-  background-color: red;
-  width: 50%;
+/* modal-content-container */
+.modal-content-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-black);
   /* positioning content to be according to user screen */
   position: fixed;
+  width: 90%;
   /* use left and top to center */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 20px 0;
+  border-radius: 5px;
+  gap: 20px;
+}
+/* modal content styles */
+.modal-content {
+  overflow-y: auto;
+  height: 70vh;
   /* padding for style */
   padding: 20px;
+}
+
+button.open,
+button.close {
+  border: 2px solid var(--primary-yellow);
+  color: var(--primary-yellow);
+  font-weight: var(--heavy-weight);
+  background-color: #f0f8ff00;
+  padding: 10px;
+  width: fit-content;
   border-radius: 5px;
+}
+button.open:hover,
+button.close:hover {
+  background-color: var(--primary-yellow);
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
+
+.modal-close {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
+}
+#close-modal {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 1025px) {
+  .modal-container {
+    align-items: flex-start;
+  }
+  .modal-close {
+    justify-content: center;
+  }
+  #close-modal {
+    justify-content: center;
+  }
+
+  button.open,
+  button.close {
+    border: 2px solid var(--neutral-white);
+    color: var(--neutral-white);
+    font-weight: var(--heavy-weight);
+    background-color: #f0f8ff00;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+  }
+  button.open:hover,
+  button.close:hover {
+    border: 2px solid var(--neutral-black);
+    background-color: var(--primary-yellow);
+    color: var(--neutral-black);
+    transition: ease-in 0.3s;
+  }
 }

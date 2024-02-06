@@ -9,13 +9,19 @@ const closeBtn = document.getElementById("close-modal");
 // OPEN MODAL logic
 const openModal = function () {
     modalElement.classList.remove("hidden");
+    //overflow hidden add to body
+    document.body.classList.add("stop-scroll");
+
 }
-openBtn.addEventListener("click", openModal); 
+
 // CLOSE MODAL LOGIC
 const closeModal = function () {
     modalElement.classList.add("hidden");
+    //overflow hidden removed from body
+    document.body.classList.remove("stop-scroll");
 }
 
+openBtn.addEventListener("click", openModal); 
 closeBtn.addEventListener("click", closeModal); 
 // CLOSE MODAL ON BACKGROUND CLICK LOGIC
 document.addEventListener("click", function (event) {
