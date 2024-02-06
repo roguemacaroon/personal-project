@@ -306,7 +306,66 @@ ul {
 Let's Connect Section
 ===================================
 */
+/* adding some space under header */
+h1 {
+  margin-top: 0;
+}
 
+/* styling for the entire section */
+.contact-me {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* styling for form only */
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: var(--spacing15);
+  align-items: center;
+  border: 2px solid var(--neutral-off-white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* targeting specific areas of the form  */
+input,
+select,
+textarea {
+  padding: var(--spacing15);
+  background: var(--neutral-off-white);
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/* just the textarea */
+textarea {
+  height: var(--spacing80);
+  resize: vertical;
+}
+
+/* button style */
+button {
+  width: 128px;
+  padding: var(--spacing20);
+  border-radius: var(--border-radius20);
+  cursor: pointer;
+  background: var(--primary-yellow);
+  color: var(--neutral-black);
+  font: var(--main-headings);
+  font-weight: var(--extra-heavy-weight);
+}
+
+button:hover {
+  background: var(--neutral-off-white);
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
 /*
 ===================================
 Footer Section
@@ -324,6 +383,24 @@ footer {
 Media Queries
 ===================================
 */
+
+@media screen and (min-width: 800px) {
+  form {
+    width: 70%;
+    margin-top: var(--spacing20);
+  }
+  form p {
+    width: 70%;
+    margin-top: 0;
+  }
+  textarea {
+    height: var(--spacing100);
+  }
+
+  .contact-me {
+    margin-top: var(--spacing80);
+  }
+}
 
 /* desktop */
 @media screen and (min-width: 1025px) {
