@@ -104,6 +104,7 @@ Hero Section
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 20px;
+  max-height: 440px;
 }
 
 /* removing the margin from the top of the H1 */
@@ -302,6 +303,10 @@ Hero Section
   }
   .hero .heading-one {
     margin-top: 20px;
+  }
+  .hero-image {
+    position: relative;
+    right: 100px;
   }
   /*
 ===================================
