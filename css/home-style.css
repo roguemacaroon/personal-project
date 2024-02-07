@@ -23,9 +23,21 @@ header a {
 }
 
 /* targeting the hamburger menu */
-.hamburger {
-  padding-right: 20px;
+button.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 60px;
+}
+
+/* turn off hover effects */
+button.hamburger:hover {
+  background-color: transparent;
 }
 
 /* editing the lines that make up the hamburger menu */
@@ -56,6 +68,7 @@ header a {
   color: var(--neutral-black);
   transition: ease-in 0.3s;
 }
+
 /* hide so you have to click to open */
 .hide {
   display: none;
@@ -417,7 +430,7 @@ Media Queries
     padding: 15px 20px;
   }
 
-  .hamburger {
+  button.hamburger {
     display: none;
   }
 

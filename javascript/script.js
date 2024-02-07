@@ -12,6 +12,20 @@ navLink.addEventListener('click', () => {
     navLink.classList.toggle('hide');
 });
 
+//tapping outside of the hamburger menu would cause the menu to close
+document.addEventListener("click", function (event) {
+  //check if nav-link does not contain a class of hide && if event target/clicked area is not the nav link
+  //event is a special parameter word 
+  //it gives an object of the event itself
+  if (!event.target.classList.contains("nav-link")&& !event.target.classList.contains("hamburger"))
+  if (!navLink.classList.contains("hide")){
+      //code that runs if condition is true
+
+    console.log("nav link is open AND clicked area is not nav-link menu");
+    navLink.classList.toggle('hide');
+    
+        }
+});
 
 //=======MODAL=========
 //=====================
@@ -41,6 +55,7 @@ const closeModal = function () {
 
 openBtn.addEventListener("click", openModal); 
 closeBtn.addEventListener("click", closeModal); 
+
 // CLOSE MODAL ON BACKGROUND CLICK LOGIC
 document.addEventListener("click", function (event) {
     //if the clicked item contains the class of modal hide the modal
