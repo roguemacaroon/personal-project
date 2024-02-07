@@ -21,7 +21,6 @@ document.addEventListener("click", function (event) {
   if (!navLink.classList.contains("hide")){
       //code that runs if condition is true
 
-    console.log("nav link is open AND clicked area is not nav-link menu");
     navLink.classList.toggle('hide');
     
         }
