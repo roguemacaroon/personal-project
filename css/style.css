@@ -1,0 +1,202 @@
+/* 
+===================================
+Resets (box-sizing, normalize, etc.) 
+===================================
+*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* 
+===================================
+Variables (colors, text, spacing, etc.)
+===================================
+*/
+:root {
+  /* colors */
+  --neutral-black: #0a0a0a;
+  --neutral-dark-gray: #484848;
+  --neutral-off-white: #c7c7c7;
+  --neutral-white: #ffffff;
+  --primary-yellow: #d3e97a;
+  --background-dark-gray: #1a1a1a;
+  --background-medium-gray: #222222;
+  --basic-black: #000000;
+
+  /* font */
+  --main-headings: "Bebas Neue", sans-serif;
+  --paragraph: "Manrope", sans-serif;
+
+  /* font weight */
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --heavy-weight: 600;
+  --extra-heavy-weight: 700;
+
+  /* Font sizes */
+  --font16: 1rem;
+  --font21: 1.313rem;
+  --font24: 1.5rem;
+  --font28: 1.75rem;
+  --font36: 2.25rem;
+  --font43: 2.688rem;
+  --font57: 3.563rem;
+  --font62: 3.875rem;
+  --font78: 4.875rem;
+
+  /* Line Height */
+  --line-height20: 1.25rem;
+  --line-height26: 1.625rem;
+  --line-height28: 1.75rem;
+  --line-height32: 2rem;
+  --line-height40: 2.5rem;
+  --line-height50: 3.125rem;
+  --line-height58: 3.625rem;
+  --line-height60: 3.75rem;
+  --line-height68: 4.25rem;
+
+  /* Spacing */
+  --spacing10: 10px;
+  --spacing15: 15px;
+  --spacing20: 20px;
+  --spacing30: 30px;
+  --spacing40: 40px;
+  --spacing50: 50px;
+  --spacing60: 60px;
+  --spacing80: 80px;
+  --spacing100: 100px;
+
+  /* border-radius */
+  --border-radius10: 10px;
+  --border-radius20: 20px;
+
+  /* Wrappers */
+  --wrapper-width-max: 1328px;
+  --desktop-wrapper-width: 90%;
+  --mobile-wrapper-width: 95%;
+}
+
+.hidden {
+  display: none;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+a {
+  color: var(--primary-yellow);
+}
+a:hover {
+  background-color: #c7c7c785;
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
+
+/* 
+===================================
+Accessibility
+=================================== 
+*/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* 
+===================================
+main styles
+=================================== 
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--neutral-black);
+  font-family: var(--paragraph);
+  color: var(--neutral-off-white);
+  font-size: var(--font16);
+  line-height: var(--line-height26);
+}
+
+/* wrapper */
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* font styles */
+.heading-one {
+  font-family: var(--main-headings);
+  color: var(--neutral-white);
+  font-size: var(--font57);
+  font-weight: var(--regular-weight);
+  line-height: var(--line-height58);
+  text-wrap: balance;
+  margin-bottom: 0;
+}
+
+.heading-two {
+  font-family: var(--main-headings);
+  color: var(--neutral-white);
+  font-size: var(--font43);
+  font-weight: var(--regular-weight);
+  line-height: var(--line-height50);
+  margin-bottom: 0;
+}
+
+.title {
+  color: var(--neutral-white);
+  font-family: var(--paragraph);
+  font-size: var(--font24);
+  font-weight: var(--medium-weight);
+  line-height: var(--line-height32);
+}
+
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    width: 90%;
+    max-width: 1130px;
+  }
+
+  p {
+    font-size: var(--font21);
+  }
+  a {
+    font-size: var(--font21);
+  }
+  .heading-one {
+    font-size: var(--font78);
+    line-height: var(--line-height68);
+  }
+
+  .heading-two {
+    font-size: var(--font62);
+  }
+
+  .title {
+    font-size: var(--font36);
+    line-height: var(--line-height40);
+  }
+}
