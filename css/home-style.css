@@ -1,0 +1,608 @@
+/* 
+===================================
+Header Section
+===================================
+*/
+
+/* targeting the links in the header */
+header a {
+  text-decoration: none;
+  font-family: var(--paragraph);
+  color: var(--primary-yellow);
+  font-weight: var(--heavy-weight);
+  font-size: var(--font21);
+  text-transform: uppercase;
+}
+
+/* targeting the nav bar itself */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* targeting the hamburger menu */
+button.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 60px;
+}
+
+/* turn off hover effects */
+button.hamburger:hover {
+  background-color: transparent;
+}
+
+/* editing the lines that make up the hamburger menu */
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: var(--primary-yellow);
+}
+
+/* the div that holds the links/buttons in the nav menu */
+.nav-link {
+  position: absolute;
+  width: 45%;
+  top: 5rem;
+  background-color: var(--background-medium-gray);
+}
+/* adjusting the links position */
+.nav-link a {
+  display: block;
+  text-align: right;
+  padding: 25px 25px;
+}
+/* hover adjustments  */
+.nav-link a:hover {
+  background-color: var(--neutral-off-white);
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
+
+/* hide so you have to click to open */
+.hide {
+  display: none;
+}
+/* 
+===================================
+Hero Section
+===================================
+*/
+.hero-column {
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* targeting the buttons */
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.button-container img {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-btn {
+  border-radius: 20px;
+  height: 40px;
+  padding: 0px 10px 0px 10px;
+  background-color: var(--primary-yellow);
+  color: var(--neutral-black);
+  font-family: var(--paragraph);
+  font-weight: var(--extra-heavy-weight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* adding a rounded radius to the hero image */
+.hero-image img {
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  max-height: 440px;
+}
+
+/* removing the margin from the top of the H1 */
+.hero .heading-one {
+  margin-top: 0;
+}
+/* 
+===================================
+Featured Project Section
+===================================
+*/
+
+/* adding padding to the top of the project card */
+.project {
+  padding-top: 30px;
+}
+
+/* the card that holds the project */
+.card {
+  background-color: var(--background-medium-gray);
+  padding: 5px;
+}
+
+/* targeting the image in the card */
+.card img {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.card img:hover {
+  filter: drop-shadow(10px 10px #d3e97a);
+  transition: ease-in 0.3s;
+}
+/* the details under the project card */
+.project-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* the links under the project card */
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.link-container a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 
+===================================
+About Me Section
+===================================
+*/
+section.about-me img {
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+/* MODAL STYLES */
+/* the entire modal section */
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the modal itself */
+.modal {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.495);
+  overflow-y: initial;
+}
+/* modal-content-container */
+.modal-content-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-black);
+  position: fixed;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 0;
+  border-radius: 5px;
+  gap: var(--spacing20);
+}
+/* modal content styles */
+.modal-content {
+  overflow-y: auto;
+  height: 70vh;
+  padding: var(--spacing20);
+}
+
+/* button styles for modal */
+button.open,
+button.close {
+  border: 2px solid var(--primary-yellow);
+  color: var(--primary-yellow);
+  font-weight: var(--heavy-weight);
+  background-color: #f0f8ff00;
+  padding: var(--spacing10);
+  width: fit-content;
+  border-radius: 5px;
+}
+button.open:hover,
+button.close:hover {
+  background-color: var(--primary-yellow);
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
+
+.modal-close {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
+}
+#close-modal {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 
+===================================
+Skills Section
+===================================
+*/
+.skills {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.design-stack p {
+  text-align: center;
+}
+
+/* targeting the list style type */
+ul {
+  list-style-type: none;
+}
+
+/* actual ul */
+.skills-list {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%;
+  padding: 0;
+}
+
+/* each individual li */
+.skill-container {
+  width: 25%;
+  min-width: 100px;
+  height: 200px;
+  position: relative;
+}
+
+/* div holding icon and name of icon */
+.skill-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: 0 auto;
+  width: 70px;
+  height: fit-content;
+  z-index: 10;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* 
+===================================
+Let's Connect Section
+===================================
+*/
+/* adding some space under header */
+h1 {
+  margin-top: 0;
+}
+
+/* styling for the entire section */
+.contact-me {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* styling for form only */
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: var(--spacing15);
+  align-items: center;
+  border: 2px solid var(--neutral-off-white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* targeting specific areas of the form  */
+input,
+select,
+textarea {
+  padding: var(--spacing15);
+  background: var(--neutral-off-white);
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/* just the textarea */
+textarea {
+  height: var(--spacing80);
+  resize: vertical;
+}
+
+/* button style */
+button {
+  width: 128px;
+  padding: var(--spacing20);
+  border-radius: var(--border-radius20);
+  cursor: pointer;
+  background: var(--primary-yellow);
+  color: var(--neutral-black);
+  font: var(--main-headings);
+  font-weight: var(--extra-heavy-weight);
+}
+
+button:hover {
+  background: var(--neutral-off-white);
+  color: var(--neutral-black);
+  transition: ease-in 0.3s;
+}
+/*
+===================================
+Footer Section
+===================================
+*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*
+===================================
+Media Queries
+===================================
+*/
+
+@media screen and (min-width: 800px) {
+  form {
+    width: 70%;
+    margin-top: var(--spacing20);
+  }
+  form p {
+    width: 70%;
+    margin-top: 0;
+  }
+  textarea {
+    height: var(--spacing100);
+  }
+
+  .contact-me {
+    margin-top: var(--spacing80);
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+  .nav-link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav-link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  button.hamburger {
+    display: none;
+  }
+
+  /*
+===================================
+Hero Section
+===================================
+*/
+  /* the entire section */
+  .hero {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  /* the write up (no image) */
+  .hero-column {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* moving the buttons over to the left */
+  .hero .button-container {
+    justify-content: left;
+  }
+  .button-container img {
+    width: 70px;
+    height: 60px;
+  }
+  .hero .heading-one {
+    margin-top: 20px;
+  }
+  .hero-image {
+    position: relative;
+    right: 100px;
+  }
+  /*
+===================================
+Project Section
+===================================
+*/
+  /* the entire section */
+  .project {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+
+  /* the card on the dark gray background */
+  .card {
+    max-width: 50%;
+  }
+  /* the image on the card */
+  .card img {
+    border-radius: 10px;
+  }
+
+  /* the information write up */
+  .project-information {
+    max-width: 50%;
+  }
+
+  /*
+===================================
+About Me Section
+===================================
+*/
+  /* making the title visible */
+  .about-me .hidden {
+    display: flex;
+  }
+  /* hiding the picture */
+  .about-me img {
+    display: none;
+  }
+  /* the entire section */
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  /* just the heading */
+  .about-me-heading {
+    width: 50%;
+  }
+
+  /* giving width to the about me information */
+  .bio-brief {
+    max-width: 50%;
+  }
+  /* modal styles */
+  .modal.hidden {
+    display: none;
+  }
+
+  /* positioning for modal */
+  .modal-container {
+    align-items: flex-start;
+  }
+  .modal-close {
+    justify-content: center;
+  }
+  #close-modal {
+    justify-content: center;
+  }
+
+  /* inverting some of the color styles */
+  button.open,
+  button.close {
+    border: 2px solid var(--neutral-white);
+    color: var(--neutral-white);
+    font-weight: var(--heavy-weight);
+  }
+  button.open:hover,
+  button.close:hover {
+    border: 2px solid var(--neutral-black);
+    background-color: var(--primary-yellow);
+  }
+
+  /*
+===================================
+Skills Section
+===================================
+*/
+
+  .tech-stack {
+    margin-bottom: 50px;
+  }
+
+  .design-stack {
+    margin-bottom: 50px;
+  }
+
+  .skill-container {
+    width: 25%;
+    min-width: 200px;
+    height: 250px;
+    position: relative;
+  }
+
+  .skill-icon {
+    width: 120px;
+  }
+  /*
+===================================
+Let's Connect Section
+===================================
+*/
+  /* connect section */
+  .lets-connect-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  /* width to the header */
+  .connect-heading {
+    width: 50%;
+  }
+  /* giving width to the info in the section */
+  .connect-info {
+    max-width: 50%;
+    margin-top: 30px;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .connect-info p {
+    position: relative;
+    left: 10px;
+  }
+}

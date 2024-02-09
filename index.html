@@ -3,11 +3,546 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The portfolio of junior developer, Trisha Augustine. Here you can see her projects, skills and reach out to her using the contact form or links to socials."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/icons/favicon/favicon.ico"
+    />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="/css/home-style.css" />
+
+    <title>Trisha Augustine</title>
   </head>
   <body>
-    <h1>Trisha Augustine - Junior Developer</h1>
+    <!-- ==================
+Header
+==================  -->
+    <!-- start of the header section -->
+    <header class="wrapper" id="top">
+      <nav class="nav">
+        <button class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+
+        <div class="nav-link hide">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills-stack">Skills</a>
+          <a href="#connect">Contact & Resume</a>
+        </div>
+      </nav>
+    </header>
+    <!-- ==================
+Hero
+==================  -->
+    <!-- this is the start of the section -->
+    <section class="hero wrapper">
+      <div class="hero-column">
+        <!-- this div contains the introduction header and paragraph -->
+        <div class="introduction">
+          <h1 class="heading-one">Hi, I am</h1>
+          <span class="heading-one">Trisha Augustine</span>
+          <p>
+            A junior developer continuously gaining experience in front-end with
+            aspirations of fullstack, from Elsipogtog New Brunswick.
+          </p>
+        </div>
+        <!-- this div holds the buttons -->
+        <div class="button-container">
+          <!-- linkedin -->
+          <a
+            href="https://www.linkedin.com/in/trisha-augustine-4b9448292/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/icons/bxl-linkedin.svg" alt="linkedin logo"
+          /></a>
+          <!-- github -->
+          <a
+            href="https://github.com/roguemacaroon"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/icons/bxl-github.svg" alt="github logo"
+          /></a>
+          <!-- instagram -->
+          <a
+            href="https://www.instagram.com/theroguemacaroon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="/assets/icons/bxl-instagram.svg" alt="instagram logo"
+          /></a>
+        </div>
+      </div>
+      <!-- this div is the hero image - the two change out, showing two different images based on media queries -->
+
+      <picture class="hero-image">
+        <source
+          media="(min-width:1025px)"
+          srcset="/assets/images/responsive-image.jpg"
+        />
+        <img src="/assets/images/hero-image-mobile.jpg" alt="a woman smiling" />
+      </picture>
+    </section>
+    <!-- giving a physical division to the end of the section -->
+    <hr />
+    <!-- ==================
+featured projects
+==================  -->
+    <!-- this is the start of the section -->
+    <section id="projects" class="featured-projects wrapper">
+      <!-- project overview -->
+      <div class="projects-overview">
+        <h2 class="heading-two">Featured Projects</h2>
+        <p>
+          Here are some projects that showcase my skills and abilities as a
+          junior developer.
+        </p>
+      </div>
+      <!-- containing the entire project section -->
+      <div class="project">
+        <div class="card">
+          <!-- class of card to keep all cards uniform -->
+          <a
+            href="https://iftheselandscouldtalk.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <picture class="card">
+              <!-- image placeholder for website -->
+              <source
+                media="(min-width:1025px)"
+                srcset="
+                  /assets/images/desktop/redesign-desktop-preview-compressed.jpg
+                "
+              />
+              <img
+                src="assets/images/website-placeholder-image.jpg"
+                alt="website demo"
+              />
+            </picture>
+          </a>
+        </div>
+        <!-- information about project -->
+        <div class="project-information">
+          <div>
+            <!-- what project was -->
+            <h2 class="title">"If These Lands Could Talk" Website Redesign</h2>
+            <!-- about the project -->
+            <p>
+              Collaborated with other junior developers under the guidance of
+              our mentors to complete a redesign of a website for If These Lands
+              Could Talk, a non-profit organization. My team tasks involved
+              global variables and the home page design. Using GitHub and git
+              terminal were the foundations of having a harmonious workflow with
+              each other, while responsive design and accessibility were the
+              overall prioritized goals.
+            </p>
+          </div>
+
+          <!-- project information and links -->
+          <div>
+            <h3>Project Info</h3>
+            <hr />
+            <!-- year -->
+            <div class="project-details">
+              <p>Year</p>
+              <p>2024</p>
+            </div>
+            <hr />
+            <!-- role -->
+            <div class="project-details">
+              <p>Role</p>
+              <p>Front-end Developer</p>
+            </div>
+            <hr />
+            <!-- tech stack -->
+            <div class="project-details">
+              <p>Tech Stack</p>
+              <p>HTML, CSS, JS</p>
+            </div>
+            <hr />
+            <!-- links to project or demos -->
+            <div class="link-container">
+              <a
+                href="https://iftheselandscouldtalk.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >VIEW LIVE
+                <img src="/assets/icons/arrow.svg" alt="directional arrow" />
+              </a>
+              <a
+                href="https://github.com/indigenousfriends/itlct-website-redesign.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SEE ON GITHUB
+                <img src="/assets/icons/bxl-github.svg" alt="GitHub logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- containing the entire project section -->
+      <div class="project">
+        <div class="card">
+          <a
+            href="https://github.com/indigenousfriends/itlct-website.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <!-- class of card to keep all cards uniform -->
+            <picture class="card">
+              <!-- image placeholder for website -->
+              <source
+                media="(min-width:1025px)"
+                srcset="
+                  /assets/images/desktop/onepage-desktop-preview-compressed.jpg
+                "
+              />
+              <img
+                src="assets/images/website-placeholder-image-2.jpg"
+                alt="website demo"
+              />
+            </picture>
+          </a>
+        </div>
+        <!-- project info container -->
+        <div class="project-information">
+          <div>
+            <!-- what project was -->
+            <p class="title">"If These Lands Could Talk" One-Page Website</p>
+            <!-- about the project -->
+            <p>
+              Collaborated with other junior developers under the guidance of
+              our mentors to complete a one-page website for If These Lands
+              Could Talk, a non-profit organization. My team tasks involved the
+              "Contact Us" section, and writing the "Read Me." Responsive design
+              and accessibility were the overall prioritized goals.
+            </p>
+          </div>
+
+          <!-- project information and links -->
+          <div>
+            <!-- project info heading -->
+            <h3>Project Info</h3>
+            <hr />
+            <!-- year -->
+            <div class="project-details">
+              <p>Year</p>
+              <p>2023</p>
+            </div>
+            <hr />
+            <!-- role -->
+            <div class="project-details">
+              <p>Role</p>
+              <p>Front-end Developer</p>
+            </div>
+            <hr />
+            <!-- tech stack -->
+            <div class="project-details">
+              <p>Tech Stack</p>
+              <p>HTML, CSS, JS</p>
+            </div>
+            <hr />
+            <!-- links to project and or demos -->
+            <div class="link-container">
+              <a
+                href="https://github.com/indigenousfriends/itlct-website.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SEE ON GITHUB
+                <img src="/assets/icons/bxl-github.svg" alt="GitHub logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- ==================
+about me
+==================  -->
+    <section id="about" class="about-me wrapper">
+      <!-- div containing heading -->
+      <div class="about-me-heading">
+        <h2 class="heading-two">About Me</h2>
+      </div>
+      <!-- div containing bio overview -->
+      <div class="bio-brief">
+        <!-- this only shows on desktop -->
+        <p class="title hidden">
+          Experience in front-end development with a dynamic professional
+          background.
+        </p>
+        <p>
+          As a junior developer, I've accumulated valuable experience in
+          front-end development. I am based in my home community of Elsipogtog
+          First Nation and am proud to be part of the growing number of
+          Indigenous people in technology.
+        </p>
+
+        <p>
+          While I am now building a career in tech, I started my journey over 10
+          years ago in healthcare.
+        </p>
+        <!-- div containting the modal in its entirety -->
+        <div class="modal-container">
+          <!-- open modal button -->
+          <button id="open-modal" class="open">LEARN MORE</button>
+
+          <!-- modal -->
+          <div id="modal" class="modal hidden">
+            <!-- container for actual modal content -->
+            <div class="modal-content-container">
+              <!-- modal close button -->
+              <div class="modal-close">
+                <button id="close-modal" class="close">CLICK TO CLOSE</button>
+              </div>
+              <!-- Modal content -->
+              <div class="modal-content wrapper">
+                <p>
+                  I have always been a person that is dedicated to following my
+                  passions. I merged my love of helping others with my desire to
+                  learn and started out in health care as a nurse and medical
+                  office assistant, this branched off to birth work and adult
+                  education as a perinatal educator and doula. When my own
+                  health prevented me from physically helping others as a nurse,
+                  I knew it was time to answer the call of my other passions,
+                  art and technology.
+                </p>
+                <p>
+                  Fueled by a relentless pursuit of knowledge, every project is
+                  a fusion of creativity, empathy, and technical proficiency. My
+                  goals of personal enrichment and effecting positive change
+                  remain unwavering.
+                </p>
+                <p>
+                  Through an Internship with Indigenous Friends Association,web
+                  development emerged as an undeniable passion. Learning skills
+                  such as HTML, CSS, and JS, while also collaborating
+                  effectively via GitHub, I've honed not just technical skills
+                  but also a knack for marrying creativity with strategic
+                  insight. My aspiration now revolves around evolving into a
+                  proficient full-stack developer.
+                </p>
+
+                <p>
+                  I embody a hybrid skill set that combines artistic prowess
+                  with technical expertise and compassionate care. Throughout my
+                  journey, I've cultivated an empathetic, courteous, and
+                  dependable approach, while ensuring accountability in every
+                  role I take.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of modal! -->
+        <!-- this image only shows in this section on mobile -->
+        <img src="/assets/images/responsive-image.jpg" alt="a woman smiling" />
+      </div>
+    </section>
+    <hr />
+    <!-- ==================
+skills
+==================  -->
+    <section id="skills-stack" class="skills wrapper">
+      <!-- first stack - tech -->
+      <h2 class="heading-two">Tech Skills</h2>
+
+      <div class="tech-stack">
+        <ul class="skills-list">
+          <!-- html -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img src="/assets/icons/skills/HTML.svg" alt="HTML logo" />
+              <p class="skill-name">HTML5</p>
+            </div>
+          </li>
+
+          <!-- css -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img src="/assets/icons/skills/CSS.svg" alt="CSS logo" />
+              <p class="skill-name">CSS</p>
+            </div>
+          </li>
+
+          <!-- javascript -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/JavaScript.svg"
+                alt="JavaScript logo"
+              />
+              <p class="skill-name">JavaScript</p>
+            </div>
+          </li>
+
+          <!-- git -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img src="/assets/icons/skills/Git.svg" alt="Git logo" />
+              <p class="skill-name">Git</p>
+            </div>
+          </li>
+
+          <!-- github -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/Github-Light.svg"
+                alt="Github logo"
+              />
+              <p class="skill-name">GitHub</p>
+            </div>
+          </li>
+
+          <!-- vscode -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/VSCode-Light.svg"
+                alt="VS Code logo"
+              />
+              <p class="skill-name">VS Code</p>
+            </div>
+          </li>
+
+          <!-- powershell -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/Powershell-Light.svg"
+                alt="Powershell logo"
+              />
+              <p class="skill-name">Powershell</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- second stack - design -->
+      <h2 class="heading-two">Design Skills</h2>
+      <div class="design-stack">
+        <ul class="skills-list">
+          <!-- clip studio paint -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/clip-studio-paint.png"
+                alt="Clip Studio Paint logo"
+              />
+              <p class="skill-name">Clip Studio</p>
+            </div>
+          </li>
+          <!-- figma -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/Figma-Light.svg"
+                alt="figma logo"
+              />
+              <p class="skill-name">Figma</p>
+            </div>
+          </li>
+          <!-- toonboom -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/Harmony.png"
+                alt="toonboom harmony logo"
+              />
+              <p class="skill-name">Toon Boom</p>
+            </div>
+          </li>
+          <!-- illustrator -->
+          <li class="skill-container">
+            <div class="skill-icon">
+              <img
+                src="/assets/icons/skills/Illustrator.svg"
+                alt="Illustrator logo"
+              />
+              <p class="skill-name">Adobe llustrator</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <!-- ==================
+let's connect
+==================  -->
+    <section id="connect" class="lets-connect wrapper">
+      <!-- div holding everything -->
+      <div class="lets-connect-container">
+        <!-- div for the heading -->
+        <div class="connect-heading">
+          <h2 class="heading-two">Get in Touch</h2>
+        </div>
+        <!-- div for paragraph and links -->
+        <div class="connect-info">
+          <p>
+            Send me a message using <a href="/contact-me.html">this form.</a>
+          </p>
+          <p>
+            Here is a PDF of my
+            <!-- resume pdf -->
+            <a
+              href="/pdf/trisha-augustine-resume.pdf"
+              target="_blank"
+              aria-label="View Trisha's resume as a PDF here"
+              >resume</a
+            >
+            for more information.
+          </p>
+          <!-- div holding social icons -->
+          <div class="button-container">
+            <!-- linkedin -->
+            <a
+              href="https://www.linkedin.com/in/trisha-augustine-4b9448292/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="/assets/icons/bxl-linkedin.svg" alt="linkedin logo"
+            /></a>
+            <!-- github -->
+            <a
+              href="https://github.com/roguemacaroon"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="/assets/icons/bxl-github.svg" alt="github logo"
+            /></a>
+            <!-- instagram -->
+            <a
+              href="https://www.instagram.com/theroguemacaroon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="/assets/icons/bxl-instagram.svg" alt="instagram logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- ==================
+footer
+==================  -->
+    <footer class="wrapper">
+      <p>&copy 2024 Trisha Augustine</p>
+      <a href="#top">Back to top</a>
+    </footer>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>
