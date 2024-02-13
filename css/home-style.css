@@ -40,6 +40,11 @@ button.hamburger:hover {
   background-color: transparent;
 }
 
+/* adjusting hamburger button position */
+button.hamburger {
+  z-index: 10;
+}
+
 /* editing the lines that make up the hamburger menu */
 .hamburger .line {
   display: block;
