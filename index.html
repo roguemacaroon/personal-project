@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/home-style.css" />
+    <!-- <link rel="stylesheet" href="/css/pool-style.css" /> -->
 
     <title>Trisha Augustine</title>
   </head>
@@ -32,7 +33,13 @@ Header
     <!-- start of the header section -->
     <header class="wrapper" id="top">
       <nav class="nav">
-        <button class="hamburger">
+        <button class="anti-hero-mode" aria-label="Stylize Page">
+          <img
+            src="/assets/images/anti-hero-logo.png"
+            alt="round deadpool logo"
+          />
+        </button>
+        <button class="hamburger" aria-label="Menu button">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
@@ -56,9 +63,15 @@ Hero
         <div class="introduction">
           <h1 class="heading-one">Hi, I am</h1>
           <span class="heading-one">Trisha Augustine</span>
-          <p>
+          <p class="hero-intro">
             A junior developer continuously gaining experience in front-end with
             aspirations of fullstack, from Elsipogtog New Brunswick.
+          </p>
+
+          <p class="anti-hero-intro hidden">
+            A junior developer with aspirations of fullstack that has been
+            virtually traveling across Turtle Island, meeting new and exciting
+            people, and gaining front end experience by coding for them.
           </p>
         </div>
         <!-- this div holds the buttons -->
@@ -68,32 +81,42 @@ Hero
             href="https://www.linkedin.com/in/trisha-augustine-4b9448292/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="/assets/icons/bxl-linkedin.svg" alt="linkedin logo"
+            ><img
+              src="/assets/icons/bxl-linkedin.svg"
+              class="socialImgLinkedin"
+              alt="linkedin logo"
           /></a>
           <!-- github -->
           <a
             href="https://github.com/roguemacaroon"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="/assets/icons/bxl-github.svg" alt="github logo"
+            ><img
+              src="/assets/icons/bxl-github.svg"
+              class="socialImgGithub"
+              alt="github logo"
           /></a>
           <!-- instagram -->
           <a
             href="https://www.instagram.com/theroguemacaroon/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="/assets/icons/bxl-instagram.svg" alt="instagram logo"
+            ><img
+              src="/assets/icons/bxl-instagram.svg"
+              class="socialImgInstagram"
+              alt="instagram logo"
           /></a>
         </div>
       </div>
       <!-- this div is the hero image - the two change out, showing two different images based on media queries -->
 
-      <picture class="hero-image">
+      <picture class="hero-image" id="hero-image">
         <source
+          id="hero-desk-image"
           media="(min-width:1025px)"
           srcset="/assets/images/responsive-image.jpg"
         />
-        <img src="/assets/images/hero-image-mobile.jpg" alt="a woman smiling" />
+        <img src="assets/images/hero-image-mobile.jpg" alt="a woman smiling" />
       </picture>
     </section>
     <!-- giving a physical division to the end of the section -->
@@ -181,14 +204,22 @@ featured projects
                 target="_blank"
                 rel="noopener noreferrer"
                 >VIEW LIVE
-                <img src="/assets/icons/arrow.svg" alt="directional arrow" />
+                <img
+                  src="/assets/icons/arrow.svg"
+                  class="socialImgArrow"
+                  alt="directional arrow"
+                />
               </a>
               <a
                 href="https://github.com/indigenousfriends/itlct-website-redesign.git"
                 target="_blank"
                 rel="noopener noreferrer"
                 >SEE ON GITHUB
-                <img src="/assets/icons/bxl-github.svg" alt="GitHub logo" />
+                <img
+                  src="/assets/icons/bxl-github.svg"
+                  class="socialImgGithub"
+                  alt="github logo"
+                />
               </a>
             </div>
           </div>
@@ -223,7 +254,7 @@ featured projects
         <div class="project-information">
           <div>
             <!-- what project was -->
-            <p class="title">"If These Lands Could Talk" One-Page Website</p>
+            <h2 class="title">"If These Lands Could Talk" One-Page Website</h2>
             <!-- about the project -->
             <p>
               Collaborated with other junior developers under the guidance of
@@ -264,7 +295,11 @@ featured projects
                 target="_blank"
                 rel="noopener noreferrer"
                 >SEE ON GITHUB
-                <img src="/assets/icons/bxl-github.svg" alt="GitHub logo" />
+                <img
+                  src="/assets/icons/bxl-github.svg"
+                  class="socialImgGithub"
+                  alt="github logo"
+                />
               </a>
             </div>
           </div>
@@ -313,6 +348,19 @@ about me
               </div>
               <!-- Modal content -->
               <div class="modal-content wrapper">
+                <p class="modal-easter-egg">
+                  I hope that this version of my portfolio has been an
+                  opportunity for you to see the fun and creative side that
+                  encompasses my personality. To create this version, I relied
+                  heavily on the use of javascript functions and event listeners
+                  to change and toggle css classes, as well as add and remove
+                  elements from the html.
+                </p>
+                <img
+                  src="./assets/images/responsive-image.jpg"
+                  class="modal-easter-egg-img"
+                  alt="a woman smiling"
+                />
                 <p>
                   I have always been a person that is dedicated to following my
                   passions. I merged my love of helping others with my desire to
@@ -320,18 +368,20 @@ about me
                   office assistant, this branched off to birth work and adult
                   education as a perinatal educator and doula. When my own
                   health prevented me from physically helping others as a nurse,
-                  I knew it was time to answer the call of my other passions,
+                  I knew it was time follow paths carved by my other passions,
                   art and technology.
                 </p>
                 <p>
                   Fueled by a relentless pursuit of knowledge, every project is
-                  a fusion of creativity, empathy, and technical proficiency. My
-                  goals of personal enrichment and effecting positive change
-                  remain unwavering.
+                  a fusion of creativity, empathy, and technical proficiency,
+                  while also reminding myself to take time to smile and enjoy
+                  the journey. Shortcuts will get us where we are going, but how
+                  we get there is the real test. My goals of personal enrichment
+                  and effecting positive change remain unwavering.
                 </p>
                 <p>
-                  Through an Internship with Indigenous Friends Association,web
-                  development emerged as an undeniable passion. Learning skills
+                  Through an Internship with Indigenous Friends Association, web
+                  development emerged as an undeniable calling. Learning skills
                   such as HTML, CSS, and JS, while also collaborating
                   effectively via GitHub, I've honed not just technical skills
                   but also a knack for marrying creativity with strategic
@@ -352,7 +402,12 @@ about me
         </div>
         <!-- end of modal! -->
         <!-- this image only shows in this section on mobile -->
-        <img src="/assets/images/responsive-image.jpg" alt="a woman smiling" />
+
+        <img
+          src="/assets/images/responsive-image.jpg"
+          id="about-me-image"
+          alt="a woman smiling"
+        />
       </div>
     </section>
     <hr />
@@ -515,21 +570,30 @@ let's connect
               href="https://www.linkedin.com/in/trisha-augustine-4b9448292/"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="/assets/icons/bxl-linkedin.svg" alt="linkedin logo"
+              ><img
+                src="/assets/icons/bxl-linkedin.svg"
+                class="socialImgLinkedin"
+                alt="linkedin logo"
             /></a>
             <!-- github -->
             <a
               href="https://github.com/roguemacaroon"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="/assets/icons/bxl-github.svg" alt="github logo"
+              ><img
+                src="/assets/icons/bxl-github.svg"
+                class="socialImgGithub"
+                alt="github logo"
             /></a>
             <!-- instagram -->
             <a
               href="https://www.instagram.com/theroguemacaroon/"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="/assets/icons/bxl-instagram.svg" alt="instagram logo"
+              ><img
+                src="/assets/icons/bxl-instagram.svg"
+                class="socialImgInstagram"
+                alt="instagram logo"
             /></a>
           </div>
         </div>
@@ -540,7 +604,8 @@ let's connect
 footer
 ==================  -->
     <footer class="wrapper">
-      <p>&copy 2024 Trisha Augustine</p>
+      <p class="hero-intro">Copyright 2024 Trisha Augustine</p>
+      <p class="anti-hero-intro hidden">Copyright 2024 Trisha Augustine</p>
       <a href="#top">Back to top</a>
     </footer>
     <script src="/javascript/script.js"></script>

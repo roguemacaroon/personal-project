@@ -1,78 +1,3 @@
-//======HEADER=========
-//=====================
-
-const hamburger = document.querySelector(".hamburger");
-const navLink = document.querySelector(".nav-link");
-
-hamburger.addEventListener("click", () => {
-  navLink.classList.toggle("hide");
-});
-
-navLink.addEventListener("click", () => {
-  navLink.classList.toggle("hide");
-});
-
-//tapping outside of the hamburger menu would cause the menu to close
-document.addEventListener("click", function (event) {
-  //check if nav-link does not contain a class of hide && if event target/clicked area is not the nav link
-  //event is a special parameter word
-  //it gives an object of the event itself
-  if (
-    !event.target.classList.contains("nav-link") &&
-    !event.target.classList.contains("hamburger")
-  )
-    if (!navLink.classList.contains("hide")) {
-      //code that runs if condition is true
-
-      navLink.classList.toggle("hide");
-    }
-});
-
-//=======MODAL=========
-//=====================
-
-// HTML Reference Variables -
-const modalElement = document.getElementById("modal");
-const openBtn = document.getElementById("open-modal");
-const closeBtn = document.getElementById("close-modal");
-
-// OPEN MODAL logic
-const openModal = function () {
-  modalElement.classList.remove("hidden");
-  //overflow hidden add to body
-  document.body.classList.add("stop-scroll");
-};
-
-// CLOSE MODAL LOGIC
-const closeModal = function () {
-  modalElement.classList.add("hidden");
-  //overflow hidden removed from body
-  document.body.classList.remove("stop-scroll");
-};
-
-openBtn.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
-
-// CLOSE MODAL ON BACKGROUND CLICK LOGIC
-document.addEventListener("click", function (event) {
-  //if the clicked item contains the class of modal hide the modal
-  //event is a special parameter word
-  //it gives an object of the event itself
-  if (event.target.classList.contains("modal")) {
-    //code that runs if condition is true
-    closeModal();
-  }
-});
-
-// if i press the escape key WHILE the modal is open (has a class of hidden), remove the the class of hidden on the modalElement. This will make the modal invisible!
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-    closeModal();
-  }
-});
-
-//===DEADPOOL MODE=====
-//=====================
 document.addEventListener("DOMContentLoaded", function () {
   //basics
   const antiHeroButton = document.querySelector(".anti-hero-mode");
@@ -187,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleImages() {
     const heroImg = document.querySelector("#hero-image img");
     if (!isDeadpoolMode) {
-      heroImg.src = "/assets/images/passion-illustrated.jpg";
+      heroImg.src = "/assets/images/passion-illustration.jpg";
     } else {
       heroImg.src = "/assets/images/hero-image-mobile.jpg";
     }
@@ -250,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-  // call the functions
+
   function antiHeroClick() {
     alertPop();
     toggleHeadings();

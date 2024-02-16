@@ -17,6 +17,39 @@ html {
 
 /* 
 ===================================
+font families 
+===================================
+*/
+@font-face {
+  font-family: "deadpool-movie-font";
+  src: url("/assets/fonts/deadpool-movie-font/deadpoolmovie-9azl-webfont.woff2")
+      format("woff2"),
+    url("/assets/fonts/deadpool-movie-font/deadpoolmovie-9azl-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uppercut";
+  src: url("/assets/fonts/uppercut/upperpunch-x3vvk-webfont.woff2")
+      format("woff2"),
+    url("/assets/fonts/uppercut/upperpunch-x3vvk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "anti-hero";
+  src: url("/assets/fonts/rogue-hero/rogueheroacad-webfont.woff2")
+      format("woff2"),
+    url("/assets/fonts/rogue-hero/rogueheroacad-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+===================================
 Variables (colors, text, spacing, etc.)
 ===================================
 */
@@ -30,10 +63,20 @@ Variables (colors, text, spacing, etc.)
   --background-dark-gray: #1a1a1a;
   --background-medium-gray: #222222;
   --basic-black: #000000;
+  /* anti-hero colors */
+  --anti-hero-red: #a10414;
+  --just-ketchup-red: #eb0017;
+  --canuck-red: #ec0e24;
+  --april-gray: #343339;
+  --angel-morning-gray: #20252c;
+  --captain-pool-black: #13171b;
 
   /* font */
   --main-headings: "Bebas Neue", sans-serif;
   --paragraph: "Manrope", sans-serif;
+  --antihero-heading-one: "anti-hero";
+  --antihero-heading-two: "deadpool-movie-font";
+  --antihero-paragraph: "uppercut";
 
   /* font weight */
   --regular-weight: 400;
@@ -47,6 +90,7 @@ Variables (colors, text, spacing, etc.)
   --font24: 1.5rem;
   --font28: 1.75rem;
   --font36: 2.25rem;
+  --font38: 2.375rem;
   --font43: 2.688rem;
   --font57: 3.563rem;
   --font62: 3.875rem;
@@ -155,6 +199,7 @@ img {
   line-height: var(--line-height58);
   text-wrap: balance;
   margin-bottom: 0;
+  transition: color 1s ease;
 }
 
 .heading-two {
@@ -164,6 +209,7 @@ img {
   font-weight: var(--regular-weight);
   line-height: var(--line-height50);
   margin-bottom: 0;
+  transition: color 1s ease;
 }
 
 .title {
@@ -174,29 +220,85 @@ img {
   line-height: var(--line-height32);
 }
 
+/* replacing header-one */
+.anti-hero-heading {
+  font-family: var(--antihero-heading-one);
+  color: var(--just-ketchup-red);
+  font-size: var(--font57);
+}
+
+/* replacing heading-two */
+.anti-hero-heading-two {
+  font-family: var(--antihero-heading-two);
+  color: var(--canuck-red);
+  font-size: var(--font43);
+}
+
+/* replacing paragraph */
+.anti-hero-paragraph {
+  font-family: var(--antihero-paragraph);
+  color: var(--neutral-white);
+  font-size: var(--font24);
+}
+
+/* replacing title */
+.anti-hero-title {
+  font-family: var(--antihero-paragraph);
+  color: var(--just-ketchup-red);
+  font-size: var(--font36);
+}
+
+/* replacing link colors */
+.anti-hero-links {
+  color: var(--canuck-red);
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
+
 @media screen and (min-width: 1025px) {
   .wrapper {
     width: 90%;
     max-width: 1130px;
   }
 
-  p {
+  p,
+  .paragraph {
     font-size: var(--font21);
   }
-  a {
+  a,
+  .anti-hero-links {
     font-size: var(--font21);
   }
-  .heading-one {
+  .heading-one,
+  .anti-hero-heading {
     font-size: var(--font78);
     line-height: var(--line-height68);
   }
 
-  .heading-two {
+  .heading-two,
+  .anti-hero-heading-two {
     font-size: var(--font62);
   }
 
   .title {
     font-size: var(--font36);
     line-height: var(--line-height40);
+  }
+  /* stylized mode */
+  .anti-hero-paragraph {
+    font-size: var(--font28);
+  }
+
+  h2.anti-hero-title {
+    font-size: var(--font38);
+  }
+  h3.anti-hero-title {
+    font-size: var(--font38);
+  }
+  .anti-hero-title {
+    font-size: var(--font36);
+  }
+
+  p .anti-hero-links {
+    font-size: var(--font28);
   }
 }
