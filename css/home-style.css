@@ -20,6 +20,7 @@ header a {
   justify-content: flex-end;
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* targeting the hamburger menu */
@@ -41,7 +42,7 @@ button.hamburger:hover {
 }
 
 /* editing the lines that make up the hamburger menu */
-.hamburger .line {
+.line {
   display: block;
   width: 40px;
   height: 5px;
@@ -49,12 +50,16 @@ button.hamburger:hover {
   background-color: var(--primary-yellow);
 }
 
+/* adjusting hamburger button position */
+button.hamburger {
+  z-index: 10;
+}
 /* the div that holds the links/buttons in the nav menu */
 .nav-link {
   position: absolute;
   width: 45%;
   top: 5rem;
-  background-color: var(--background-medium-gray);
+  background-color: var(--angel-morning-gray);
 }
 /* adjusting the links position */
 .nav-link a {
@@ -124,6 +129,38 @@ Hero Section
 .hero .heading-one {
   margin-top: 0;
 }
+
+/* deadpool mode button */
+
+button.anti-hero-mode {
+  background-color: transparent;
+  padding: 5px;
+  width: 55px;
+  height: 55px;
+  z-index: 10;
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
+
+.line-change {
+  background-color: var(--just-ketchup-red);
+  z-index: 1;
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
+
+button.hamburger {
+  z-index: 30;
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
+
+.mode-two {
+  color: var(--canuck-red);
+}
+
+/* replacing link colors */
+.anti-hero-links {
+  color: var(--canuck-red);
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
 /* 
 ===================================
 Featured Project Section
@@ -139,6 +176,7 @@ Featured Project Section
 .card {
   background-color: var(--background-medium-gray);
   padding: 5px;
+  border-radius: 10px;
 }
 
 /* targeting the image in the card */
@@ -173,6 +211,15 @@ Featured Project Section
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.card.mode-two-card img:hover {
+  filter: drop-shadow(10px 10px var(--anti-hero-red));
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
+
+.mode-two {
+  color: var(--canuck-red);
 }
 
 /* 
@@ -256,6 +303,24 @@ button.close:hover {
   position: relative;
   display: flex;
   justify-content: flex-start;
+}
+
+.modal-easter-egg,
+.modal-easter-egg-img {
+  display: none;
+}
+
+/* deadpool styles for modal */
+button.antihero-open,
+button.antihero-close {
+  border: 2px solid var(--canuck-red);
+  color: var(--canuck-red);
+  cursor: url("/assets/images/cursor-one.png"), auto;
+}
+button.antihero-open:hover,
+button.antihero-close:hover {
+  background-color: var(--canuck-red);
+  cursor: url("/assets/images/cursor-one.png"), auto;
 }
 
 /* 
@@ -550,6 +615,18 @@ About Me Section
   button.close:hover {
     border: 2px solid var(--neutral-black);
     background-color: var(--primary-yellow);
+  }
+
+  button.antihero-open,
+  button.antihero-close {
+    border: 2px solid var(--canuck-red);
+    color: var(--canuck-red);
+    cursor: url("/assets/images/cursor-one.png"), auto;
+  }
+  button.antihero-open:hover,
+  button.antihero-close:hover {
+    background-color: var(--canuck-red);
+    cursor: url("/assets/images/cursor-one.png"), auto;
   }
 
   /*
