@@ -19,8 +19,8 @@ header a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: var(--spacing20);
+  padding-bottom: var(--spacing20);
 }
 
 /* targeting the hamburger menu */
@@ -46,7 +46,7 @@ button.hamburger:hover {
   display: block;
   width: 40px;
   height: 5px;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing10);
   background-color: var(--primary-yellow);
 }
 
@@ -120,7 +120,7 @@ Hero Section
 /* adding a rounded radius to the hero image */
 .hero-image img {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: var(--spacing20);
   border-radius: 20px;
   max-height: 440px;
 }
@@ -169,14 +169,14 @@ Featured Project Section
 
 /* adding padding to the top of the project card */
 .project {
-  padding-top: 30px;
+  padding-top: var(--spacing30);
 }
 
 /* the card that holds the project */
 .card {
   background-color: var(--background-medium-gray);
   padding: 5px;
-  border-radius: 10px;
+  border-radius: var(--spacing10);
 }
 
 /* targeting the image in the card */
@@ -204,13 +204,13 @@ Featured Project Section
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 40px;
+  gap: var(--spacing40);
 }
 
 .link-container a {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing10);
 }
 
 .card.mode-two-card img:hover {
@@ -231,7 +231,7 @@ section.about-me img {
   margin: 0 auto;
   width: 70%;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: var(--spacing20);
   max-width: 400px;
 }
 /* MODAL STYLES */
@@ -329,8 +329,8 @@ Skills Section
 ===================================
 */
 .skills {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: var(--spacing40);
+  margin-bottom: var(--spacing40);
 }
 
 .design-stack p {
@@ -366,17 +366,17 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50px;
+  top: var(--spacing50);
   margin: 0 auto;
   width: 70px;
   height: fit-content;
   z-index: 10;
-  margin-top: 20px;
+  margin-top: var(--spacing20);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: var(--spacing10);
 }
 
 /* 
@@ -486,7 +486,7 @@ Media Queries
     display: block;
     position: static;
     width: auto;
-    margin-right: 20px;
+    margin-right: var(--spacing20);
     background: none;
   }
 
@@ -508,8 +508,8 @@ Hero Section
   .hero {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    margin-bottom: 30px;
+    gap: var(--spacing40);
+    margin-bottom: var(--spacing30);
   }
   /* the write up (no image) */
   .hero-column {
@@ -526,7 +526,7 @@ Hero Section
     height: 60px;
   }
   .hero .heading-one {
-    margin-top: 20px;
+    margin-top: var(--spacing20);
   }
   .hero-image {
     position: relative;
@@ -541,8 +541,8 @@ Project Section
   .project {
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    margin-bottom: 30px;
+    gap: var(--spacing60);
+    margin-bottom: var(--spacing30);
   }
 
   /* the card on the dark gray background */
@@ -576,8 +576,8 @@ About Me Section
   .about-me {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    margin-bottom: 30px;
+    gap: var(--spacing40);
+    margin-bottom: var(--spacing30);
   }
   /* just the heading */
   .about-me-heading {
@@ -636,11 +636,11 @@ Skills Section
 */
 
   .tech-stack {
-    margin-bottom: 50px;
+    margin-bottom: var(--spacing50);
   }
 
   .design-stack {
-    margin-bottom: 50px;
+    margin-bottom: var(--spacing50);
   }
 
   .skill-container {
@@ -662,8 +662,8 @@ Let's Connect Section
   .lets-connect-container {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: var(--spacing40);
+    margin-bottom: var(--spacing40);
   }
   /* width to the header */
   .connect-heading {
@@ -672,14 +672,14 @@ Let's Connect Section
   /* giving width to the info in the section */
   .connect-info {
     max-width: 50%;
-    margin-top: 30px;
-    row-gap: 20px;
+    margin-top: var(--spacing30);
+    row-gap: var(--spacing20);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
   .connect-info p {
     position: relative;
-    left: 10px;
+    left: var(--spacing10);
   }
 }
