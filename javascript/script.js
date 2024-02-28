@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isDeadpoolMode && firstTime) {
       firstTime = false;
       alert(
-        "You have enabled Deadpool Mode! Click the Deadpool logo again to turn it off"
+        "You have enabled Deadpool Mode! A fun mode I added to showcase my JavaScript skills. Simply click the Deadpool logo again to turn it off."
       );
     }
   }
