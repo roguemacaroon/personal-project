@@ -172,6 +172,11 @@ Featured Project Section
   padding-top: var(--spacing30);
 }
 
+.project-information {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
 /* the card that holds the project */
 .card {
   background-color: var(--background-medium-gray);
@@ -181,7 +186,7 @@ Featured Project Section
 
 /* targeting the image in the card */
 .card img {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -547,10 +552,12 @@ Project Section
 
   /* the card on the dark gray background */
   .card {
+    align-content: center;
     max-width: 50%;
   }
   /* the image on the card */
   .card img {
+    width: 90%;
     border-radius: 10px;
   }
 
