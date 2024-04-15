@@ -1,3 +1,21 @@
+//======top btn=========
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+   topBtn.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 //======HEADER=========
 const hamburger = document.querySelector(".hamburger");
 const navLink = document.querySelector(".nav-link");
@@ -66,10 +84,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isDeadpoolMode && firstTime) {
       firstTime = false;
       alert(
-        "You have enabled Deadpool Mode! A fun mode I added to showcase my JavaScript skills. Simply click the Deadpool logo again to turn it off."
+        "You have enabled Deadpool Mode! A fun mode I added to showcase my JavaScript skills. Simply click the Deadpool logo again to turn it off. Resize the browser, and check the About Me to see all the Easter eggs!"
       );
     }
   }
+
+  //top button change
+  function toggleTopBtn() {
+    const topBtnImg = document.querySelector("#topBtn img");
+    if (!isDeadpoolMode) {
+      topBtnImg.src = "/assets/icons/antiHero-topBtn.svg"; 
+    } else {
+      topBtnImg.src = "/assets/icons/topBtn.svg"; 
+    }
+  }
+  
 
   // headings and paragraphs
   function toggleHeadings() {
@@ -233,6 +262,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // call the functions
   function antiHeroClick() {
     alertPop();
+    toggleTopBtn();
     toggleHeadings();
     toggleParagraphs();
     toggleTitles();

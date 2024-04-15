@@ -138,6 +138,7 @@ button.anti-hero-mode {
   width: 40px;
   height: 40px;
   z-index: 10;
+  border: none;
   cursor: url("/assets/images/cursor-one.png"), auto;
 }
 
@@ -175,22 +176,23 @@ Featured Project Section
 /* the card that holds the project */
 .card {
   background-color: var(--background-medium-gray);
-  padding: 5px;
   border-radius: var(--spacing10);
 }
 
+
 /* targeting the image in the card */
 .card img {
-  width: 90%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 30px;
 }
 
 .card img:hover {
   filter: drop-shadow(10px 10px #d3e97a);
   transition: ease-in 0.3s;
+  border: none;
 }
 /* the details under the project card */
 .project-details {
@@ -463,6 +465,7 @@ Media Queries
 */
 
 @media screen and (min-width: 800px) {
+
   form {
     width: 70%;
     margin-top: var(--spacing20);
@@ -551,7 +554,7 @@ Project Section
   }
   /* the image on the card */
   .card img {
-    border-radius: 10px;
+    border-radius: 30px;
   }
 
   /* the information write up */
